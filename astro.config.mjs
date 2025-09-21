@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { defineConfig } from 'astro/config';
 
 // https://starlight.astro.build/reference/configuration
 export default defineConfig({
@@ -41,10 +41,10 @@ export default defineConfig({
         //   label: 'Japanese', //Japanese
         //   lang: 'ja',
         // },
-        // 'pl': {
-        //   label: 'Polish', //Polish
-        //   lang: 'pl',
-        // },
+         'pl': {
+           label: 'Polish', //Polish
+           lang: 'pl',
+        },
          'ru': {
            label: 'Русский', //Russian
            lang: 'ru',
@@ -69,7 +69,8 @@ export default defineConfig({
             'vi': 'Chung',
             'zh-CN': '通用',
             'es': 'General',
-	           'ru': 'Общее'
+	          'ru': 'Общее',
+            'pl': 'Ogólne',
           },
           autogenerate: { directory: 'general' },
         },
@@ -93,7 +94,8 @@ export default defineConfig({
             'vi': 'Kho lưu trữ (ko đc duy trì)',
             'zh-CN': '存档（不再维护）',
             'es': 'Archivos (no mantenidos)',
-	           'ru': 'Прошлые версии (не поддерживаются)'
+	          'ru': 'Прошлые версии (не поддерживаются)',
+            'pl': '[EW] Stare rzeczy',
           },
 					autogenerate: { directory: 'archives' },
 				},
@@ -105,7 +107,8 @@ export default defineConfig({
             'vi': 'Ghi chú cho dev',
             'zh-CN': '开发者笔记',
             'es': 'Notas de desarrollo',
-	           'ru': 'Для разработчиков'
+	          'ru': 'Для разработчиков',
+            'pl': 'Dziennik deweloperski'
           },
 					autogenerate: { directory: 'dev' },
 				},
@@ -116,7 +119,8 @@ export default defineConfig({
           translations: {
             'zh-CN': '翻译此文档',
             'es': 'Traducir esta wiki',
-	    'ru': 'Помогите перевести вики',
+	          'ru': 'Помогите перевести вики',
+            'pl': 'Pomóż przetłumaczyć tę wiki'
           },
           link: '/dev/doc-site-contrib',
 				},
